@@ -29,7 +29,7 @@ public class Anfibio extends Animal{
 	public void setVenenoso(boolean venenoso) {
 		this.venenoso=venenoso;
 	}
-	public boolean getVenenoso() {
+	public boolean isVenenoso() {
 		return(venenoso);
 	}
     public static int cantidadAnfibios() {

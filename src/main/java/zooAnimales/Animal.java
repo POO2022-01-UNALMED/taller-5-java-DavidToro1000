@@ -8,7 +8,15 @@ public class Animal {
 	private String genero;
 	private Zona zona;
 	public Animal() {
-		
+		totalAnimales+=1;
+	}
+	public Animal(String nombre, int edad, String habitat, String genero, Zona zona) {
+		this.nombre = nombre;
+		this.edad = edad;
+		this.habitat= habitat;
+		this.genero = genero;
+		this.zona = zona;
+		totalAnimales += 1;
 	}
 	public Animal(String nombre, int edad, String habitat, String genero) {
 		this.nombre = nombre;

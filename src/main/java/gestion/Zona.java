@@ -32,5 +32,12 @@ public class Zona {
     public Zoologico getZoo() {
     	return zoo;
     }
+    public ArrayList<Animal> getAnimales(){
+		return animales;
+	}
+	
+	public void setAnimales(ArrayList<Animal> animales) {
+		this.animales = animales;
+	}
     
 }

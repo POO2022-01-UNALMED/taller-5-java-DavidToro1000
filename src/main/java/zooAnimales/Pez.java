@@ -2,7 +2,7 @@ package zooAnimales;
 import java.util.ArrayList;
 import gestion.Zona;
 public class Pez extends Animal{
-     private static ArrayList<Pez> listado;
+     private static ArrayList<Pez> listado= new ArrayList<Pez>();
      public static int salmones;
      public static int bacalaos;
      private String colorEscamas;
@@ -11,6 +11,12 @@ public class Pez extends Animal{
     	 super();
  		 listado.add(this);
      }
+     public Pez(String nombre, int edad, String habitat, String genero, Zona zona,String colorEscamas, int cantidadAletas) {
+ 		super(nombre, edad, habitat, genero,zona);
+ 		this.colorEscamas = colorEscamas;
+ 		this.cantidadAletas = cantidadAletas;
+ 		listado.add(this);
+ 	}
      public Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
     	 super(nombre, edad, habitat, genero);
     	 this.colorEscamas=colorEscamas;
